@@ -23,14 +23,17 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.+'
-    
     compile 'com.android.support:recyclerview-v7:23.+'
     compile 'com.android.support:cardview-v7:23.+'
 
-    compile 'com.jakewharton:butterknife:7.0.1' // 依赖注入
-    compile 'com.squareup.picasso:picasso:2.5.2' // 图片加载
+    // 依赖注入
+    compile 'com.jakewharton:butterknife:7.0.1'
+    // 图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
-    // 视频播放库
+    // 视频播放库 视频播放器的管理器,用于管理视频状态(开始,停止)的切换
     compile 'com.github.danylovolokh:video-player-manager:0.2.0'
+    // 视频播放库 列表可视化工具,包含一些管理视频可视化的常用方法
     compile 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+
 }

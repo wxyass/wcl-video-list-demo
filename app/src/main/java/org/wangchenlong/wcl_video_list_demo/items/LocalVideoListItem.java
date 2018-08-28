@@ -15,15 +15,13 @@ import com.volokh.danylo.video_player_manager.ui.VideoPlayerView;
 public class LocalVideoListItem extends VideoListItem {
     private final AssetFileDescriptor mAssetFileDescriptor; // 资源文件描述
 
-    public LocalVideoListItem(VideoPlayerManager<MetaData> videoPlayerManager, String title,
-                              @DrawableRes int imageResource, AssetFileDescriptor assetFileDescriptor) {
+    public LocalVideoListItem(VideoPlayerManager<MetaData> videoPlayerManager, String title,@DrawableRes int imageResource, AssetFileDescriptor assetFileDescriptor) {
         super(videoPlayerManager, title, imageResource);
         mAssetFileDescriptor = assetFileDescriptor;
     }
 
     @Override
-    public void playNewVideo(MetaData currentItemMetaData, VideoPlayerView player,
-                             VideoPlayerManager<MetaData> videoPlayerManager) {
+    public void playNewVideo(MetaData currentItemMetaData, VideoPlayerView player,VideoPlayerManager<MetaData> videoPlayerManager) {
         videoPlayerManager.playNewVideo(currentItemMetaData, player, mAssetFileDescriptor);
     }
 }

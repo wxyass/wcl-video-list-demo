@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
     public static final int LOCAL = 0; // 本地
     public static final int ONLINE = 1; // 在线
 
-    @Bind(R.id.main_t_toolbar) Toolbar mTToolbar;
+    @Bind(R.id.main_t_toolbar)
+    Toolbar mTToolbar;
+
     private FragmentManager mFM;
 
     @Override
@@ -36,12 +38,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override public boolean onCreateOptionsMenu(Menu menu) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
-    @Override public boolean onOptionsItemSelected(MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.enable_local_video:
                 if (!item.isChecked())

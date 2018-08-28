@@ -14,8 +14,7 @@ import com.volokh.danylo.video_player_manager.ui.VideoPlayerView;
 public class OnlineVideoListItem extends VideoListItem {
     private final String mOnlineUrl; // 资源文件描述
 
-    public OnlineVideoListItem(VideoPlayerManager<MetaData> videoPlayerManager, String title,
-                               @DrawableRes int imageResource, String onlineUrl) {
+    public OnlineVideoListItem(VideoPlayerManager<MetaData> videoPlayerManager, String title, @DrawableRes int imageResource, String onlineUrl) {
         super(videoPlayerManager, title, imageResource);
         mOnlineUrl = onlineUrl;
     }
